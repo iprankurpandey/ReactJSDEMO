@@ -1,0 +1,45 @@
+<mxfile host="65bd71144e">
+    <diagram id="TYs8XzQ9CBxQhv7jTv8u" name="Page-1">
+        <mxGraphModel dx="820" dy="459" grid="0" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="9" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;Call Stack&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="120" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;b&gt;WebAPI&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="200" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;b&gt;Call Back Queue&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="250" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.exchange_active_sync;fillColor=#2072B8;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="180" width="49" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="elbow=horizontal;endArrow=classicThin;html=1;fontSize=16;entryX=1;entryY=0.75;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#000000;" edge="1" parent="1" source="10" target="11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="260" as="sourcePoint"/>
+                        <mxPoint x="410" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="340" y="260"/>
+                            <mxPoint x="290" y="260"/>
+                            <mxPoint x="290" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.exchange_active_sync;fillColor=#2072B8;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="131" width="49" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Pushes the Async JS to WebAPI" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="429" y="200" width="341" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="All JS code be it sync/async executes in call stack" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="117" y="68" width="400" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="WebAPI can't send async JS code to Call Stack directly it pushes the code to Call Back Queue and it sends the Async code to call stack" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="304" width="410" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
