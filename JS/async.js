@@ -15,19 +15,20 @@ console.log(' I am in console doing something ...')
 // we cant pass variable in settimeout it can only take function.
 
 
-// let one = () => {
-//     console.log(' I am in console one printing something ...')
-// }
+let one = () => {
+    console.log(' I am in console one printing something ...')
+}
 
-// let two = () => {
-//     one()
-//     console.log(' I am in console two eating something ...')
-// }
-// let three = () => {
-//     two()
-//     console.log(' I am in console three doing something ...')
-// }
+let two = () => {
+    one()
+    console.log(' I am in console two eating something ...')
+}
+let three = () => {
+    two()
+    console.log(' I am in console three doing something ...')
+}
 
+three()
 
-// three()
+// added undraw diagram for Async JS
 
