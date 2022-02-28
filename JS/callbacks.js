@@ -22,4 +22,21 @@ z(function(){
 })  //callbackhell
 
 // calling on function inside another function
- 
+
+// let strLength=(yourName)=>{
+//     let yName = yourName.length;
+//     console.log(yName)
+// } 
+
+let strLength=(yourName)=>{
+    let yName = yourName.length;
+    console.log(`omg ${yourName} your name is ${yName} char long`)
+}
+
+function next(name1, fn){
+    strLength(name1)
+    
+}
+
+next('Raaaaaa',strLength)
+
